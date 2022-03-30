@@ -1,0 +1,9 @@
+li:active {
+  background-color: #555;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
