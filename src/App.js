@@ -8,15 +8,17 @@ import ItemComponent from "./components/ItemComponent";
 import UserComponent from "./components/UserComponent";
 import { Provider } from "react-redux";
 import store from "./redux/store";
-
+import { FilePickerAndSave } from "./components/FilePicker&Save";
 import "react-toastify/dist/ReactToastify.css";
-
+import { ParentForm } from "./components/MultiStepForm/ParentForm";
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <ItemComponent cake />
+        {/* <ItemComponent cake />
         <UserComponent />
+        <FilePickerAndSave /> */}
+        <ParentForm />
 
         {/* <CakeComponent/>
         <HooksCakeComponent/>

@@ -2,7 +2,7 @@ import React from "react";
 import { resetFetchedUsers } from "../redux";
 import { connect } from "react-redux";
 
-export const ResetUserData = (props) => {
+const ResetUserData = (props) => {
   const { resetFetchedUsersData } = props;
   return (
     <div>
@@ -13,13 +13,6 @@ export const ResetUserData = (props) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    userData: state.users,
-    isLoading: state.users.loading,
-  };
-};
-
 const mapDispatchToProps = (dispatch) => {
   return {
     resetFetchedUsersData: () => {
@@ -28,4 +21,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ResetUserData);
+export default connect(null, mapDispatchToProps)(ResetUserData);

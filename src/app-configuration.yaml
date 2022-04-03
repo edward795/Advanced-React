@@ -1,0 +1,4 @@
+name:demo_app
+version:1.0.0
+env:dev
+port:4000

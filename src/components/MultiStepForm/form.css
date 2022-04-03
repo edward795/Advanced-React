@@ -1,0 +1,15 @@
+.formClass {
+  margin: 120px;
+}
+
+.formField {
+  display: block;
+  margin: 20px;
+}
+
+.buttonClass {
+  display: inline-block;
+}
+.buttonClass button {
+  margin: 10px;
+}
